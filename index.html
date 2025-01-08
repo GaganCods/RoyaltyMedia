@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <title>Royalty Media - Premium Stock Photos & Videos</title>
+    <!-- Protection Script -->
+    <script src="js/protection.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-camera-retro me-2"></i>Royalty Media
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photos.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donate.html">Donate</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/2923156/pexels-photo-2923156.jpeg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center text-white">
+                        <h1 class="display-2 fw-bold mb-4" data-aos="fade-up">
+                            Discover Perfect Shots
+                        </h1>
+                        <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">
+                            Access our curated collection of stunning photos and videos for your creative projects
+                        </p>
+                        <div class="search-container" data-aos="fade-up" data-aos-delay="200">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search photos and videos...">
+                                <button class="btn btn-primary px-4">
+                                    <i class="fas fa-search me-2"></i>Search
+                                </button>
+                            </div>
+                            <div class="popular-tags mt-3">
+                                <span class="text-white-50">Popular:</span>
+                                <a href="#" class="tag">Nature</a>
+                                <a href="#" class="tag">Architecture</a>
+                                <a href="#" class="tag">People</a>
+                                <a href="#" class="tag">Travel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <div class="chevron"></div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="categories-section py-6">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold tracking-wide" data-aos="fade-up">Categories</h6>
+                <h2 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="100">Explore by Category</h2>
+                <p class="text-muted lead" data-aos="fade-up" data-aos-delay="200">Find the perfect content for your next project</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="category-card nature">
+                        <div class="category-overlay"></div>
+                        <div class="category-content">
+                            <h3>Nature</h3>
+                            <p>1,000+ Photos & Videos</p>
+                            <a href="#" class="btn btn-light">Explore Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="category-card architecture">
+                                <div class="category-overlay"></div>
+                                <div class="category-content">
+                                    <h3>Architecture</h3>
+                                    <p>800+ Photos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="category-card people">
+                                <div class="category-overlay"></div>
+                                <div class="category-content">
+                                    <h3>People</h3>
+                                    <p>1,200+ Photos</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="category-card travel">
+                                <div class="category-overlay"></div>
+                                <div class="category-content">
+                                    <h3>Travel</h3>
+                                    <p>2,000+ Photos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section py-6 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold tracking-wide" data-aos="fade-up">Featured Work</h6>
+                <h2 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="100">Latest Additions</h2>
+                <p class="text-muted lead" data-aos="fade-up" data-aos-delay="200">Discover our most recent and popular content</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="featured-card">
+                        <div class="featured-img">
+                            <img src="https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg" alt="Nature">
+                            <div class="featured-overlay">
+                                <div class="featured-actions">
+                                    <button class="action-btn download">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                    <button class="action-btn like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share">
+                                        <i class="fas fa-share-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-info">
+                            <div class="photographer">
+                                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                <span>John Doe</span>
+                            </div>
+                            <div class="stats">
+                                <span><i class="fas fa-eye"></i> 2.5k</span>
+                                <span><i class="fas fa-heart"></i> 1.2k</span>
+                                <span><i class="fas fa-download"></i> 850</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-card">
+                        <div class="featured-img">
+                            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="Architecture">
+                            <div class="featured-overlay">
+                                <div class="featured-actions">
+                                    <button class="action-btn download">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                    <button class="action-btn like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share">
+                                        <i class="fas fa-share-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-info">
+                            <div class="photographer">
+                                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Jane Smith">
+                                <span>Jane Smith</span>
+                            </div>
+                            <div class="stats">
+                                <span><i class="fas fa-eye"></i> 1.8k</span>
+                                <span><i class="fas fa-heart"></i> 950</span>
+                                <span><i class="fas fa-download"></i> 620</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-card">
+                        <div class="featured-img">
+                            <img src="https://images.pexels.com/photos/2923156/pexels-photo-2923156.jpeg" alt="Travel">
+                            <div class="featured-overlay">
+                                <div class="featured-actions">
+                                    <button class="action-btn download">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                    <button class="action-btn like">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share">
+                                        <i class="fas fa-share-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-info">
+                            <div class="photographer">
+                                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Mike Johnson">
+                                <span>Mike Johnson</span>
+                            </div>
+                            <div class="stats">
+                                <span><i class="fas fa-eye"></i> 3.2k</span>
+                                <span><i class="fas fa-heart"></i> 1.5k</span>
+                                <span><i class="fas fa-download"></i> 980</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary btn-lg" data-aos="fade-up">View All Featured Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Us Section -->
+    <section class="support-section py-6">
+        <div class="container">
+            <div class="section-header text-center">
+                <h6 class="text-primary text-uppercase fw-bold tracking-wide" data-aos="fade-up">Support Our Work</h6>
+                <h2 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="100">Help Us Keep Creating</h2>
+                <p class="text-muted lead" data-aos="fade-up" data-aos-delay="200">Your support helps us continue providing high-quality content for creators worldwide</p>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="support-card text-center p-4">
+                        <div class="support-icon mb-4">
+                            <i class="fas fa-heart fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">One-Time Donation</h3>
+                        <p class="text-muted mb-4">Make a one-time contribution to support our mission of providing free media resources.</p>
+                        <a href="donate.html" class="btn btn-outline-primary">Donate Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="support-card text-center p-4 featured">
+                        <div class="support-icon mb-4">
+                            <i class="fas fa-star fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Become a Member</h3>
+                        <p class="text-muted mb-4">Join our community with a monthly subscription and get exclusive benefits and early access.</p>
+                        <a href="membership.html" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="support-card text-center p-4">
+                        <div class="support-icon mb-4">
+                            <i class="fas fa-handshake fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Partner With Us</h3>
+                        <p class="text-muted mb-4">Explore partnership opportunities and help us grow our platform together.</p>
+                        <a href="partnership.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="300">
+                <p class="text-muted mb-4">Every contribution makes a difference in maintaining our platform</p>
+                <a href="about.html#support" class="btn btn-link text-primary">Learn more about how we use donations <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-6">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6" data-aos="fade-up">
+                    <div class="stat-card">
+                        <i class="fas fa-image fa-2x mb-3"></i>
+                        <h3>10K+</h3>
+                        <p>Photos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <i class="fas fa-video fa-2x mb-3"></i>
+                        <h3>5K+</h3>
+                        <p>Videos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <i class="fas fa-users fa-2x mb-3"></i>
+                        <h3>50K+</h3>
+                        <p>Users</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <i class="fas fa-download fa-2x mb-3"></i>
+                        <h3>100K+</h3>
+                        <p>Downloads</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-6 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-4 fw-bold mb-4">Stay Updated</h2>
+                    <p class="lead mb-0">Subscribe to our newsletter for the latest updates and exclusive content</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email">
+                            <button class="btn btn-light btn-lg px-4">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-6 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-brand mb-4 d-inline-block" href="index.html">
+                        <i class="fas fa-camera-retro me-2"></i>Royalty Media
+                    </a>
+                    <p class="mb-4">Discover and download high-quality photos and videos for your creative projects.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="photos.html#allFilter">All Photos</a></li>
+                        <li><a href="photos.html#natureFilter">Nature</a></li>
+                        <li><a href="photos.html#peopleFilter">People</a></li>
+                        <li><a href="photos.html#architectureFilter">Architecture</a></li>
+                        <li><a href="photos.html#animalsFilter">Animals</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="partnership.html">Partnership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> contact@royaltymedia.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Media Street, CA 94107</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Royalty Media. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a  href="https://instagram.com/its.mrgagan" target="_blank" class="text-white me-3">Developed by Gagan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Donation Icon -->
+    <div class="floating-donation-icon" data-bs-toggle="modal" data-bs-target="#donationModal">
+        <i class="fas fa-heart"></i>
+    </div>
+
+    <!-- Donation Modal -->
+    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="donationModalLabel">Support Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="donation-content">
+                        <div class="donation-tabs">
+                            <div class="donation-tab active">UPI Payment</div>
+                        </div>
+                        
+                        <div class="donation-amount">
+                            <div class="amount-presets">
+                                <div class="preset-amount" data-amount="100">₹100</div>
+                                <div class="preset-amount" data-amount="200">₹200</div>
+                                <div class="preset-amount" data-amount="500">₹500</div>
+                                <div class="preset-amount" data-amount="1000">₹1000</div>
+                            </div>
+                            
+                            <div class="donation-input">
+                                <input type="number" class="form-control" id="customAmount" placeholder="Enter amount" min="1" max="100000" oninput="checkMaxValue(this)">
+                                <span class="currency-symbol">₹</span>
+                            </div>
+                        </div>
+
+                        <div class="qr-code-container">
+                            <h6 class="text-center mb-3">Scan QR Code to Pay</h6>
+                            <div id="qrcode" class="text-center"></div>
+                        </div>
+
+                        <div class="donation-buttons">
+                            <button class="btn btn-donate btn-upi" onclick="openUPIApp()">
+                                <i class="fas fa-mobile-alt"></i>
+                                Pay with UPI App
+                            </button>
+                            <button class="btn btn-donate btn-primary" onclick="downloadQRCode()">
+                                <i class="fas fa-download"></i>
+                                Download QR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 50,
+        });
+
+        let currentUpiUrl = '';  // Variable to store current UPI URL
+
+        // Handle preset amounts
+        document.querySelectorAll('.preset-amount').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.preset-amount').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Update input value
+                const amount = button.dataset.amount;
+                document.getElementById('customAmount').value = amount;
+                
+                // Update QR code
+                updateQRCode();
+            });
+        });
+
+        function checkMaxValue(input) {
+            if (input.value > 100000) {
+                input.value = 100000;
+            }
+            // Remove active class from preset amounts when custom value is entered
+            document.querySelectorAll('.preset-amount').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            updateQRCode();
+        }
+
+        function updateQRCode() {
+            var amountInput = document.getElementById("customAmount").value;
+            var description = '';
+            currentUpiUrl = generateUPILink(amountInput, description);
+            qrcode.makeCode(currentUpiUrl);
+        }
+
+        function generateUPILink(amount, description) {
+            return `upi://pay?pa=shailendrapratapji@upi&pn=Royalty%20Media&am=${amount}&cu=INR&tn=${description}`;
+        }
+
+        function openUPIApp() {
+            var amountInput = document.getElementById("customAmount").value;
+            if (!amountInput || amountInput <= 0) {
+                alert('Please enter a valid donation amount');
+                return;
+            }
+
+            // Update QR code and URL if needed
+            if (!currentUpiUrl) {
+                updateQRCode();
+            }
+            
+            // For mobile devices
+            if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                window.location.href = currentUpiUrl;
+            } else {
+                // For desktop - show a message
+                alert('Please use a mobile device with UPI apps installed to use this feature, or scan the QR code.');
+            }
+        }
+
+        function downloadQRCode() {
+            var qrCanvas = document.querySelector('#qrcode canvas');
+            var borderedCanvas = document.createElement('canvas');
+            var ctx = borderedCanvas.getContext('2d');
+            borderedCanvas.width = qrCanvas.width + 40;
+            borderedCanvas.height = qrCanvas.height + 40;
+            
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(0, 0, borderedCanvas.width, borderedCanvas.height);
+            ctx.drawImage(qrCanvas, 20, 20);
+
+            var link = document.createElement('a');
+            link.download = 'royalty_media_donation_qr.png';
+            link.href = borderedCanvas.toDataURL('image/png');
+            link.click();
+        }
+
+        // Handle donation tabs
+        document.querySelectorAll('.donation-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.donation-tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                // Add active class to clicked tab
+                tab.classList.add('active');
+            });
+        });
+
+        // Initialize QR code
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width: 256,
+            height: 256
+        });
+
+        // Set initial QR code
+        updateQRCode();
+    </script>
+</body>
+</html>
