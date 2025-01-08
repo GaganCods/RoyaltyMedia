@@ -1,0 +1,37 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Ensure the base directory is handled correctly
+RewriteBase /
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Redirect requests with .html to URLs without it
+RewriteCond %{THE_REQUEST} \s([^.]+)\.html[\s?]
+RewriteRule ^ %1 [R=301,L]
+
+# Custom error pages
+ErrorDocument 404 /404.html
+
+# Security Headers
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Content-Type-Options "nosniff"
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
+
+# Disable directory listing
+Options -Indexes
+
+# Prevent access to .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Prevent hotlinking of images
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yourdomain.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
